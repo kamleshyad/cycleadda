@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cycleadda</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/print.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="headersec">
+        <div class="container">
+            <div class="logo">
+                <!-- <a href="#"><img src="images/newlogo.png" width="152" height="159" alt="logo"/></a> -->
+                <a href="#">Cycleadda</span></a>
+            </div>
+            <div class="headerright">
+                <ul class="reset">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Cycle</a></li>
+                    <li><a href="#">Electric Cycle</a></li>
+                    <li><a href="#">Spare Parts</a></li>
+                    <li><a href="#">Health Guide</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bannersec">
+        <div class="container">
+            <div class="owl-carousel bannerslider">
+                <div class="item">
+                    <div class="bannerimg">
+                        <img src="images/banner-2.jpg" width="1440" height="530" alt="banner1" />
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+            </div>
+        </div>
+    </div>
+
+<script>
+$('.owl-carousel.bannerslider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+</script>
+</body>
+</html>
+    
