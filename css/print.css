@@ -1,0 +1,197 @@
+/*** GLOBAL SETTING ***/
+body {margin:0; padding:0;font:normal 18px 'Poppins', sans-serif; color:#010101; line-height:normal;}
+
+/*** GLOBAL SELECTORS ***/
+a{ color:#e0dcdc; transition: .3s ease;}
+a:hover{ color:#f7c17b;} 
+/*Main Content*/
+.container{ width: 1290px; margin:0 auto}
+
+.owl-carousel, .owl-carousel .owl-item { -webkit-tap-highlight-color:transparent; position:relative } 
+.owl-carousel { display:none; width:100%; z-index:1;}
+.owl-carousel .owl-stage { position:relative; -ms-touch-action:pan-Y; touch-action:manipulation; -moz-backface-visibility:hidden }
+.owl-carousel .owl-stage:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0 }
+.owl-carousel .owl-stage-outer { position:relative; overflow:hidden; -webkit-transform:translate3d(0, 0, 0)}
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper { -webkit-backface-visibility:hidden; -moz-backface-visibility:hidden; -ms-backface-visibility:hidden; -webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0)}
+.owl-carousel .owl-item {  float:left; -webkit-backface-visibility:hidden; -webkit-touch-callout:none}
+.owl-carousel .owl-item img { display:block; width:auto; max-width:100%; }
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {display:none}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {display:block}
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev { cursor:pointer; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}
+.owl-carousel.owl-loading { opacity:0; display:block;}
+.owl-carousel.owl-hidden {opacity:0;}
+.owl-carousel.owl-refresh .owl-item {visibility:hidden;}
+.owl-carousel.owl-drag .owl-item {-ms-touch-action:pan-y; touch-action:pan-y; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none }
+.owl-carousel.owl-grab { cursor:move; cursor:grab }
+.owl-carousel.owl-rtl {direction:rtl}
+.owl-carousel.owl-rtl .owl-item {float:right}
+.owl-carousel .animated {animation-duration:1s;animation-fill-mode:both}
+.owl-carousel .owl-animated-in {z-index:0}
+.owl-carousel .owl-animated-out {z-index:1}
+.owl-carousel .fadeOut {animation-name:fadeOut}
+
+/* Feel free to change duration  */ 
+.animated  { -webkit-animation-duration : 1000 ms  ; animation-duration : 1000 ms  ; -webkit-animation-fill-mode : both  ; animation-fill-mode : both  ;}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {  z-index : 1    }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {  z-index : 0    }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {  -webkit-animation-name : fadeOut  ;  animation-name : fadeOut  ;}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* saira-regular - latin */
+@font-face {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/saira-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/saira-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/saira-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/saira-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/saira-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/saira-v14-latin-regular.svg#Saira') format('svg'); /* Legacy iOS */
+  }
+  /* saira-600 - latin */
+  @font-face {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/saira-v14-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/saira-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/saira-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/saira-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/saira-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/saira-v14-latin-600.svg#Saira') format('svg'); /* Legacy iOS */
+  }
+  /* saira-700 - latin */
+  @font-face {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/saira-v14-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/saira-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/saira-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/saira-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/saira-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/saira-v14-latin-700.svg#Saira') format('svg'); /* Legacy iOS */
+  }
+
+/* poppins-300 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-regular - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+  .headersec{padding: 15px 0; background: #274d5a;}
+  .headersec .container{display: flex; justify-content: space-between; align-items: center; font-size: 0;}
+  .headersec .logo a{display: inline-block; font-size: 40px; color: #f7c17b; font-weight: 700; line-height: 52px; font-family: 'Saira', sans-serif; letter-spacing: 0.8px;}
+  .headersec .headerright ul{font-size: 0; margin-left: -50px;}
+  .headerright ul li{display: inline-block; vertical-align: middle; margin-left: 50px;}
+  .headerright ul li a{display: inline-block; font-size: 18px; color: #e0dcdc; font-weight: 500; line-height: 26px; letter-spacing: 0.5px;}
+  .headerright ul li a.active{color: #f7c17b;}
+  .headerright ul li a:hover{color: #f7c17b;}
+
+  .bannersec .container{width: 1349px;}
+  .bannersec .owl-carousel .owl-item img{width: 100%; object-fit: cover;}
